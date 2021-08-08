@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Sample project to test out different DE and DS tools"
 authors = ["stejul <https://github.com/stejul>"]
 license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.10"
@@ -22,7 +23,6 @@ scipy = "^1.7.1"
 dagster = "^0.12.4"
 dagit = "^0.12.4"
 requests = "^2.26.0"
-beautifulsoup4 = "^4.9.3"
 pytest = "^6.2.4"
 dagstermill = "^0.12.4"
 dagster-pandas = "^0.12.4"
@@ -30,6 +30,7 @@ dagster-spark = "^0.12.4"
 dagster-pyspark = "^0.12.4"
 pyspark-stubs = "3.0.0.dev0"
 html5lib = "^1.1"
+Scrapy = "^2.5.0"
 
 [tool.poetry.dev-dependencies]
 
