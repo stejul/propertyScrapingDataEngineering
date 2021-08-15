@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  s3:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.minio
+    container_name: "s3"
+    ports:
+      - "9001:9001"

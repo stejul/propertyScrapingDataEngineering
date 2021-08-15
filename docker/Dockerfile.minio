@@ -1,0 +1,14 @@
+FROM alpine:3.14.1
+
+ENV MINIO_ROOT_USER=admin
+ENV MINIO_ROOT_PASSWORD=password
+
+WORKDIR /minio
+
+RUN wget https://dl.min.io/server/minio/release/linux-amd64/minio
+
+RUN chmod +x minio
+
+EXPOSE 9001
+
+ENTRYPOINT ["./minio", "server", "/minio/storedData", "--console-address", ":9001"]
