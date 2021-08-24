@@ -1,15 +1,16 @@
-from minio import Minio
-from dagster import solid
+from dagster import solid, pipeline
+import boto3
 
-@solid
-def upload_to_s3(context, url: str, bucket_name: str, blob): 
-    client = Minio("s3.min.io", access_key="", secret_key="")
+@solid(name="uploadObjectToS3", description="Upload given file to S3 server")
+def upload_to_s3(): 
 
-    found = client.bucket_exists(bucket_name)
+    s3 = boto3.client(service_name="s3", endpoint_url="http://localhost:9000", aws_access_key_id="admin", aws_secret_access_key="password")
 
-    if not found:
-        client.make_bucket(bucket_name)
-    else:
-        print(f"Bucket {bucket_name} already exists")
+    s3.create_bucket(Bucket="boban")
 
-    client.fput_object(bucket_name=bucket_name, object_name="testObj.csv", file_path=blob)
+    s3.upload_file(Filename="src/data/apt_dump.csv", Bucket="boban", Key="testFile.csv")
+    print("File has been uploaded to bucket")
+
+@pipeline
+def runIt():
+    upload_to_s3()

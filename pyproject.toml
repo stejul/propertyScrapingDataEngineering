@@ -31,8 +31,8 @@ dagster-pyspark = "^0.12.4"
 pyspark-stubs = "3.0.0.dev0"
 html5lib = "^1.1"
 Scrapy = "^2.5.0"
-minio = "^7.1.0"
 Scrapy-UserAgents = "^0.0.1"
+boto3 = "^1.18.27"
 
 [tool.poetry.dev-dependencies]
 
