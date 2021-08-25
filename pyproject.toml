@@ -35,6 +35,8 @@ Scrapy-UserAgents = "^0.0.1"
 boto3 = "^1.18.27"
 
 [tool.poetry.dev-dependencies]
+pre-commit = "^2.14.0"
+black = "^21.7b0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
