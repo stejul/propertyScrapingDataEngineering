@@ -1,9 +1,9 @@
-from dagster import FileHandle, String, Output, OutputDefinition, solid, pipeline
+from dagster import DagsterInvalidConfigDefinitionError, Output, OutputDefinition, solid, pipeline
 from dagster_aws.s3 import S3Coordinate
 from typing import List
 from os import walk
 import boto3
-import os
+import ntpath
 
 
 @solid(
@@ -29,31 +29,32 @@ def upload_to_s3(
         aws_secret_access_key="password",
     )
 
+    return_s3_coordinate: S3Coordinate = {"bucket": s3_coordinate["bucket"]}
     for file in local_files:
-        return_s3_coordinate: S3Coordinate = {
-            "bucket": s3_coordinate["bucket"],
-            "key": s3_coordinate["key"] + "/" + file,
-        }
+        head, tail = ntpath.split(file)
+        return_s3_coordinate["key"] = s3_coordinate["key"] + "/" + tail
 
         if s3Resource.Bucket(return_s3_coordinate["bucket"]).creation_date is None:
             s3.create_bucket(Bucket=return_s3_coordinate["bucket"])
 
         context.log.info(file)
         s3.upload_file(
-            Filename=file,
+            Filename=f"{head}/{tail}",
             Bucket=return_s3_coordinate["bucket"],
             Key=return_s3_coordinate["key"],
         )
         context.log.info("Uploaded successfully")
-        return s3_coordinate
-    return None
+    
+    return return_s3_coordinate
 
 
 @solid(name="getListOfFiles")
-def get_all_csv_files(context) -> str:
+def get_all_csv_files(context) -> List[str]:
+    list = []
     for (dirpath, dirname, filenames) in walk("src/data/"):
-        yield Output(f"src/data/{filenames}")
-
+        for file in filenames:
+            list.append(f"src/data/{file}")
+    return Output(value=list)
 
 @pipeline
 def execute_pipeline():
