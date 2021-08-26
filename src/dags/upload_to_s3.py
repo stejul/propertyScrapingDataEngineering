@@ -1,27 +1,27 @@
-from dagster import Any, String, Field, Bool, OutputDefinition, solid, pipeline
-import boto3
-
-
-@solid(
-    name="uploadObjectToS3",
-    description="Upload given file to S3 server",
-    output_defs=[OutputDefinition(dagster_type=Bool, name="s3Client")],
-    config_schema={
-        "bucket_name": Field(
-            String, is_required=True, description="Used name to create bucket"
-        ),
-        "filepath": Field(
-            String,
-            is_required=True,
-            description="Where the filed is located on the disk",
-        ),
-        "s3_filepath": Field(
-            String, is_required=True, description="How the file should be named on s3"
-        ),
-    },
+from dagster import (
+    Any,
+    String,
+    Field,
+    Bool,
+    LocalFileHandle,
+    OutputDefinition,
+    solid,
+    pipeline,
 )
-def upload_to_s3(context, bucket_name: str, filepath: str, s3_filepath: str) -> Bool:
+from dagster_aws.s3 import S3Coordinate
+import boto3
+import os
 
+
+@solid(name="uploadObjectToS3", description="Upload given file to S3 server")
+def upload_to_s3(
+    context, local_file: LocalFileHandle, s3_coordinate: S3Coordinate
+) -> S3Coordinate:
+
+    return_s3_coordinate: S3Coordinate = {
+        "bucket": s3_coordinat["bucket"],
+        "key": s3_coordiante["key"] + "/" + os.path.basename(local_file.path),
+    }
     s3 = boto3.client(
         service_name="s3",
         endpoint_url="http://localhost:9000",
@@ -29,11 +29,15 @@ def upload_to_s3(context, bucket_name: str, filepath: str, s3_filepath: str) -> 
         aws_secret_access_key="password",
     )
 
-    s3.create_bucket(Bucket=bucket_name)
+    s3.create_bucket(Bucket=return_s3_coordinate["bucket"])
 
-    s3.upload_file(Filename=filepath, Bucket=bucket_name, Key=s3_filepath)
+    s3.upload_file(
+        Filename=local_file,
+        Bucket=return_s3_coordinate["bucket"],
+        Key=return_s3_coordinate["key"],
+    )
     context.log.info("Uploaded successfully")
-    return True
+    return s3_coordinate
 
 
 @pipeline

@@ -341,7 +341,7 @@ six = "*"
 
 [[package]]
 name = "dagit"
-version = "0.12.5"
+version = "0.12.7"
 description = "Web UI for dagster."
 category = "main"
 optional = false
@@ -349,8 +349,8 @@ python-versions = "*"
 
 [package.dependencies]
 click = ">=7.0,<8.0"
-dagster = "0.12.5"
-dagster-graphql = "0.12.5"
+dagster = "0.12.7"
+dagster-graphql = "0.12.7"
 flask = ">=0.12.4,<2.0.0"
 flask-cors = ">=3.0.6"
 Flask-GraphQL = ">=2.0.0"
@@ -369,7 +369,7 @@ starlette = ["starlette"]
 
 [[package]]
 name = "dagster"
-version = "0.12.5"
+version = "0.12.7"
 description = "A data orchestrator for machine learning, analytics, and ETL."
 category = "main"
 optional = false
@@ -381,7 +381,6 @@ click = ">=5.0,<8.0"
 coloredlogs = ">=6.1,<=14.0"
 croniter = ">=0.3.34"
 docstring-parser = "*"
-future = "*"
 grpcio = ">=1.32.0"
 grpcio-health-checking = ">=1.32.0"
 Jinja2 = "<3.0"
@@ -405,15 +404,34 @@ docker = ["docker"]
 test = ["astroid (>=2.3.3,<2.5)", "black (==20.8b1)", "coverage (==5.3)", "docker", "flake8 (>=3.7.8)", "freezegun (>=0.3.15)", "grpcio-tools (==1.32.0)", "isort (>=4.3.21,<5)", "mock (==3.0.5)", "protobuf (==3.13.0)", "pylint (==2.6.0)", "pytest-cov (==2.10.1)", "pytest-dependency (==0.5.1)", "pytest-mock (==3.3.1)", "pytest-rerunfailures (==10.0)", "pytest-runner (==5.2)", "pytest-xdist (==2.1.0)", "pytest (==6.1.1)", "responses (>=0.10.0,<0.11.0)", "snapshottest (==0.6.0)", "tox (==3.14.2)", "tox-pip-version (==0.0.7)", "tqdm (==4.48.0)", "yamllint"]
 
 [[package]]
+name = "dagster-aws"
+version = "0.12.7"
+description = "Package for AWS-specific Dagster framework solid and resource components."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+boto3 = "*"
+dagster = "0.12.7"
+packaging = "*"
+psycopg2-binary = "*"
+requests = "*"
+
+[package.extras]
+pyspark = ["dagster-pyspark"]
+test = ["moto (==1.3.16)", "requests-mock"]
+
+[[package]]
 name = "dagster-graphql"
-version = "0.12.5"
+version = "0.12.7"
 description = "The GraphQL frontend to python dagster."
 category = "main"
 optional = false
 python-versions = "*"
 
 [package.dependencies]
-dagster = "0.12.5"
+dagster = "0.12.7"
 gevent = "*"
 gevent-websocket = ">=0.10.1"
 gql = "<3"
@@ -423,50 +441,50 @@ requests = "*"
 
 [[package]]
 name = "dagster-pandas"
-version = "0.12.5"
+version = "0.12.7"
 description = "Utilities and examples for working with pandas and dagster, an opinionated framework for expressing data pipelines"
 category = "main"
 optional = false
 python-versions = "*"
 
 [package.dependencies]
-dagster = "0.12.5"
+dagster = "0.12.7"
 pandas = "*"
 
 [[package]]
 name = "dagster-pyspark"
-version = "0.12.5"
+version = "0.12.7"
 description = "Package for PySpark Dagster framework components."
 category = "main"
 optional = false
 python-versions = "*"
 
 [package.dependencies]
-dagster = "0.12.5"
-dagster-spark = "0.12.5"
+dagster = "0.12.7"
+dagster-spark = "0.12.7"
 pyspark = {version = ">=3.0.0", markers = "python_version >= \"3.8\""}
 
 [[package]]
 name = "dagster-spark"
-version = "0.12.5"
+version = "0.12.7"
 description = "Package for Spark Dagster framework components."
 category = "main"
 optional = false
 python-versions = "*"
 
 [package.dependencies]
-dagster = "0.12.5"
+dagster = "0.12.7"
 
 [[package]]
 name = "dagstermill"
-version = "0.12.5"
+version = "0.12.7"
 description = "run notebooks using the Dagster tools"
 category = "main"
 optional = false
 python-versions = "*"
 
 [package.dependencies]
-dagster = "0.12.5"
+dagster = "0.12.7"
 ipykernel = ">=4.9.0,<5.4.0 || >5.4.0,<5.4.1 || >5.4.1"
 packaging = ">=20.5"
 papermill = ">=1.0.0"
@@ -587,14 +605,6 @@ python-versions = "*"
 Flask = "*"
 gevent = "*"
 gevent-websocket = "*"
-
-[[package]]
-name = "future"
-version = "0.18.2"
-description = "Clean single-source support for Python 3 and 2"
-category = "main"
-optional = false
-python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "gevent"
@@ -1570,6 +1580,14 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 test = ["ipaddress", "mock", "unittest2", "enum34", "pywin32", "wmi"]
 
 [[package]]
+name = "psycopg2-binary"
+version = "2.9.1"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "ptyprocess"
 version = "0.7.0"
 description = "Run a subprocess in a pseudo terminal"
@@ -2387,7 +2405,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "faba42405fa714cc35daf33b45ee79c51a016f7285a47038d1fa01bf093158f4"
+content-hash = "60175bf8bd33fa0aec26c43540ffc856a75f0a3d89e9893d25680c34f59bd0f6"
 
 [metadata.files]
 alembic = [
@@ -2570,32 +2588,36 @@ cycler = [
     {file = "cycler-0.10.0.tar.gz", hash = "sha256:cd7b2d1018258d7247a71425e9f26463dfb444d411c39569972f4ce586b0c9d8"},
 ]
 dagit = [
-    {file = "dagit-0.12.5-py3-none-any.whl", hash = "sha256:ca7d475abb505b59985844667205259ce56b63d81f5c8ecec50d0d25b7335783"},
-    {file = "dagit-0.12.5.tar.gz", hash = "sha256:0944c6c09a8cec961f14bb285be1813e0d043520f20d61db9f85c9e26658cffd"},
+    {file = "dagit-0.12.7-py3-none-any.whl", hash = "sha256:a09025e790a2677514aaaf4e99571e60bb3a6e16f8aeb7bf3d9b6b8dd24dd46d"},
+    {file = "dagit-0.12.7.tar.gz", hash = "sha256:88409613786e34ab72dcb71283761625bed97acafb970f457951605915c50c6e"},
 ]
 dagster = [
-    {file = "dagster-0.12.5-py3-none-any.whl", hash = "sha256:dbe138c6f905281ca7708a41ccd74638b9c25cbf23f22e91231f524584861091"},
-    {file = "dagster-0.12.5.tar.gz", hash = "sha256:5deee96eec467bee10b6af02729131f832f709435d8fd79555ad58d82f1bfba9"},
+    {file = "dagster-0.12.7-py3-none-any.whl", hash = "sha256:a23c5b62db32685f807c9a67d721d1eae76c08282f504cd5329e0b1d0fe3758c"},
+    {file = "dagster-0.12.7.tar.gz", hash = "sha256:2b57fc44daf7fe82755fece07d15579da56f81bb911ad012449dc7ff20562624"},
+]
+dagster-aws = [
+    {file = "dagster-aws-0.12.7.tar.gz", hash = "sha256:6d5e10949e056950079baecf1bbe46377e99ac72cf0361e55abb895136104c6b"},
+    {file = "dagster_aws-0.12.7-py3-none-any.whl", hash = "sha256:fd3eef2f73766661364fa78d963999aa51b36b4bc1a10e86cecaec3ef868fe1e"},
 ]
 dagster-graphql = [
-    {file = "dagster-graphql-0.12.5.tar.gz", hash = "sha256:001693cb416be5bc54b3a40944b582d6e6a065f4b7b254234e782863c37a436a"},
-    {file = "dagster_graphql-0.12.5-py3-none-any.whl", hash = "sha256:6e3973730214f7514434fb9c86c3324c3a2d64be471aab0e42923bce63d70e50"},
+    {file = "dagster-graphql-0.12.7.tar.gz", hash = "sha256:7bb5e28253adfa1ee363e6803ab08bef152d551433c2685e4d353a1832935c65"},
+    {file = "dagster_graphql-0.12.7-py3-none-any.whl", hash = "sha256:99cb8fd0b3ce54cafd81aa79ee35f3f22d46c3472512122801ad084f251d8c14"},
 ]
 dagster-pandas = [
-    {file = "dagster-pandas-0.12.5.tar.gz", hash = "sha256:03f0d5d72c1bcac9f2159f1182dd81c234786bc3ee082be9310a5a697104329b"},
-    {file = "dagster_pandas-0.12.5-py3-none-any.whl", hash = "sha256:5df503d647e7f8c21a097122d54dff6d0be21b941cb17a02e63c11df58e4bcee"},
+    {file = "dagster-pandas-0.12.7.tar.gz", hash = "sha256:1deba56dedd982f909a4959a5a48ce79d6f628bd3a86437a5cfb330758ea7c77"},
+    {file = "dagster_pandas-0.12.7-py3-none-any.whl", hash = "sha256:228cb01815e56918f55d11636a8d75e13939614bad8ea41bb2ea9637c70467ce"},
 ]
 dagster-pyspark = [
-    {file = "dagster-pyspark-0.12.5.tar.gz", hash = "sha256:25f3b2cc66622255c6362a564b57f64054eea4321016ae23aa4903c18a46ba03"},
-    {file = "dagster_pyspark-0.12.5-py3-none-any.whl", hash = "sha256:cdf7e3aa8fc8fd1b4e80ad18214ef85629879b94567284c79c37377e35354c15"},
+    {file = "dagster-pyspark-0.12.7.tar.gz", hash = "sha256:e2aff79438179446e484e25233ae7f90e034a194ebbb73f4fc0640265e6feb1f"},
+    {file = "dagster_pyspark-0.12.7-py3-none-any.whl", hash = "sha256:ee4045f2056f53878b8510fa992ff7a1be3dfbf9c4fbbba10683440b405d64f3"},
 ]
 dagster-spark = [
-    {file = "dagster-spark-0.12.5.tar.gz", hash = "sha256:5df099791badcb7b9c67384107585104b62836652782437680c4bdd3a615b8a7"},
-    {file = "dagster_spark-0.12.5-py3-none-any.whl", hash = "sha256:0b75d55273983a517e768ee688a1031a594a0f67cc81ff966871c7ffc2ad9021"},
+    {file = "dagster-spark-0.12.7.tar.gz", hash = "sha256:70db924df500f0dcbbed9c82bdd9fede310bd316bd9a1ecc876a7e2a243d585f"},
+    {file = "dagster_spark-0.12.7-py3-none-any.whl", hash = "sha256:3ffc6bbd373fdc8109d89090f72f3cb898880bedfda5b0cc3dc4dbc7c640ff5a"},
 ]
 dagstermill = [
-    {file = "dagstermill-0.12.5-py3-none-any.whl", hash = "sha256:f3d3b3d0dcf4345190102d5a1088896f468e73bcb3f41c2135b2cad28385ef28"},
-    {file = "dagstermill-0.12.5.tar.gz", hash = "sha256:08cd51b222625c35cf1019149249923eecaa8f93cd6df6c8c7aef00404977641"},
+    {file = "dagstermill-0.12.7-py3-none-any.whl", hash = "sha256:ee7181fcc8b2a1999e7fb105bb9c178007b46851b59d353236863a2321195ea9"},
+    {file = "dagstermill-0.12.7.tar.gz", hash = "sha256:6c56df3ec36373fe0a3664091c930c82f99e3118fb82c7547e95f3c9ab36626c"},
 ]
 debugpy = [
     {file = "debugpy-1.4.1-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:a2c5a1c49239707ed5bc8e97d8f9252fb392d9e13c79c7b477593d7dde4ae24a"},
@@ -2692,9 +2714,6 @@ flask-graphql = [
 flask-sockets = [
     {file = "Flask-Sockets-0.2.1.tar.gz", hash = "sha256:072927da8edca0e81e024f5787e643c87d80b351b714de95d723becb30e0643b"},
     {file = "Flask_Sockets-0.2.1-py2.py3-none-any.whl", hash = "sha256:350a76d55f5889f64afd2ca9b32f262680b7960965f0830365576307d30cfe1e"},
-]
-future = [
-    {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
 ]
 gevent = [
     {file = "gevent-21.8.0-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:e91632fdcf1c9a33e97e35f96edcbdf0b10e36cf53b58caa946dca4836bb688c"},
@@ -3383,6 +3402,37 @@ psutil = [
     {file = "psutil-5.8.0-cp39-cp39-win32.whl", hash = "sha256:ea372bcc129394485824ae3e3ddabe67dc0b118d262c568b4d2602a7070afdb0"},
     {file = "psutil-5.8.0-cp39-cp39-win_amd64.whl", hash = "sha256:f4634b033faf0d968bb9220dd1c793b897ab7f1189956e1aa9eae752527127d3"},
     {file = "psutil-5.8.0.tar.gz", hash = "sha256:0c9ccb99ab76025f2f0bbecf341d4656e9c1351db8cc8a03ccd62e318ab4b5c6"},
+]
+psycopg2-binary = [
+    {file = "psycopg2-binary-2.9.1.tar.gz", hash = "sha256:b0221ca5a9837e040ebf61f48899926b5783668b7807419e4adae8175a31f773"},
+    {file = "psycopg2_binary-2.9.1-cp36-cp36m-macosx_10_14_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:c250a7ec489b652c892e4f0a5d122cc14c3780f9f643e1a326754aedf82d9a76"},
+    {file = "psycopg2_binary-2.9.1-cp36-cp36m-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:aef9aee84ec78af51107181d02fe8773b100b01c5dfde351184ad9223eab3698"},
+    {file = "psycopg2_binary-2.9.1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:123c3fb684e9abfc47218d3784c7b4c47c8587951ea4dd5bc38b6636ac57f616"},
+    {file = "psycopg2_binary-2.9.1-cp36-cp36m-manylinux_2_24_aarch64.whl", hash = "sha256:995fc41ebda5a7a663a254a1dcac52638c3e847f48307b5416ee373da15075d7"},
+    {file = "psycopg2_binary-2.9.1-cp36-cp36m-manylinux_2_24_ppc64le.whl", hash = "sha256:fbb42a541b1093385a2d8c7eec94d26d30437d0e77c1d25dae1dcc46741a385e"},
+    {file = "psycopg2_binary-2.9.1-cp36-cp36m-win32.whl", hash = "sha256:20f1ab44d8c352074e2d7ca67dc00843067788791be373e67a0911998787ce7d"},
+    {file = "psycopg2_binary-2.9.1-cp36-cp36m-win_amd64.whl", hash = "sha256:f6fac64a38f6768e7bc7b035b9e10d8a538a9fadce06b983fb3e6fa55ac5f5ce"},
+    {file = "psycopg2_binary-2.9.1-cp37-cp37m-macosx_10_14_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:1e3a362790edc0a365385b1ac4cc0acc429a0c0d662d829a50b6ce743ae61b5a"},
+    {file = "psycopg2_binary-2.9.1-cp37-cp37m-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:f8559617b1fcf59a9aedba2c9838b5b6aa211ffedecabca412b92a1ff75aac1a"},
+    {file = "psycopg2_binary-2.9.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a36c7eb6152ba5467fb264d73844877be8b0847874d4822b7cf2d3c0cb8cdcb0"},
+    {file = "psycopg2_binary-2.9.1-cp37-cp37m-manylinux_2_24_aarch64.whl", hash = "sha256:2f62c207d1740b0bde5c4e949f857b044818f734a3d57f1d0d0edc65050532ed"},
+    {file = "psycopg2_binary-2.9.1-cp37-cp37m-manylinux_2_24_ppc64le.whl", hash = "sha256:cfc523edecddaef56f6740d7de1ce24a2fdf94fd5e704091856a201872e37f9f"},
+    {file = "psycopg2_binary-2.9.1-cp37-cp37m-win32.whl", hash = "sha256:1e85b74cbbb3056e3656f1cc4781294df03383127a8114cbc6531e8b8367bf1e"},
+    {file = "psycopg2_binary-2.9.1-cp37-cp37m-win_amd64.whl", hash = "sha256:1473c0215b0613dd938db54a653f68251a45a78b05f6fc21af4326f40e8360a2"},
+    {file = "psycopg2_binary-2.9.1-cp38-cp38-macosx_10_14_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:35c4310f8febe41f442d3c65066ca93cccefd75013df3d8c736c5b93ec288140"},
+    {file = "psycopg2_binary-2.9.1-cp38-cp38-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:8c13d72ed6af7fd2c8acbd95661cf9477f94e381fce0792c04981a8283b52917"},
+    {file = "psycopg2_binary-2.9.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:14db1752acdd2187d99cb2ca0a1a6dfe57fc65c3281e0f20e597aac8d2a5bd90"},
+    {file = "psycopg2_binary-2.9.1-cp38-cp38-manylinux_2_24_aarch64.whl", hash = "sha256:aed4a9a7e3221b3e252c39d0bf794c438dc5453bc2963e8befe9d4cd324dff72"},
+    {file = "psycopg2_binary-2.9.1-cp38-cp38-manylinux_2_24_ppc64le.whl", hash = "sha256:da113b70f6ec40e7d81b43d1b139b9db6a05727ab8be1ee559f3a69854a69d34"},
+    {file = "psycopg2_binary-2.9.1-cp38-cp38-win32.whl", hash = "sha256:4235f9d5ddcab0b8dbd723dca56ea2922b485ea00e1dafacf33b0c7e840b3d32"},
+    {file = "psycopg2_binary-2.9.1-cp38-cp38-win_amd64.whl", hash = "sha256:988b47ac70d204aed01589ed342303da7c4d84b56c2f4c4b8b00deda123372bf"},
+    {file = "psycopg2_binary-2.9.1-cp39-cp39-macosx_10_14_x86_64.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:7360647ea04db2e7dff1648d1da825c8cf68dc5fbd80b8fb5b3ee9f068dcd21a"},
+    {file = "psycopg2_binary-2.9.1-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:ca86db5b561b894f9e5f115d6a159fff2a2570a652e07889d8a383b5fae66eb4"},
+    {file = "psycopg2_binary-2.9.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5ced67f1e34e1a450cdb48eb53ca73b60aa0af21c46b9b35ac3e581cf9f00e31"},
+    {file = "psycopg2_binary-2.9.1-cp39-cp39-manylinux_2_24_aarch64.whl", hash = "sha256:0f2e04bd2a2ab54fa44ee67fe2d002bb90cee1c0f1cc0ebc3148af7b02034cbd"},
+    {file = "psycopg2_binary-2.9.1-cp39-cp39-manylinux_2_24_ppc64le.whl", hash = "sha256:3242b9619de955ab44581a03a64bdd7d5e470cc4183e8fcadd85ab9d3756ce7a"},
+    {file = "psycopg2_binary-2.9.1-cp39-cp39-win32.whl", hash = "sha256:0b7dae87f0b729922e06f85f667de7bf16455d411971b2043bbd9577af9d1975"},
+    {file = "psycopg2_binary-2.9.1-cp39-cp39-win_amd64.whl", hash = "sha256:b4d7679a08fea64573c969f6994a2631908bb2c0e69a7235648642f3d2e39a68"},
 ]
 ptyprocess = [
     {file = "ptyprocess-0.7.0-py2.py3-none-any.whl", hash = "sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"},
