@@ -1,4 +1,10 @@
-from dagster import DagsterInvalidConfigDefinitionError, Output, OutputDefinition, solid, pipeline
+from dagster import (
+    DagsterInvalidConfigDefinitionError,
+    Output,
+    OutputDefinition,
+    solid,
+    pipeline,
+)
 from dagster_aws.s3 import S3Coordinate
 from typing import List
 from os import walk
@@ -44,7 +50,7 @@ def upload_to_s3(
             Key=return_s3_coordinate["key"],
         )
         context.log.info("Uploaded successfully")
-    
+
     return return_s3_coordinate
 
 
@@ -55,6 +61,7 @@ def get_all_csv_files(context) -> List[str]:
         for file in filenames:
             list.append(f"src/data/{file}")
     return Output(value=list)
+
 
 @pipeline
 def execute_pipeline():

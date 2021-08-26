@@ -14,7 +14,7 @@ A brief description of what this project does and who it's for
 - Jupyter Notebook
 - Min.io (https://min.io/)
 - PySpark
-  
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
@@ -23,7 +23,7 @@ To run this project, you will need to add the following environment variables to
 
 `ANOTHER_API_KEY`
 
-  
+
 ## Features
 
 - Light/dark mode toggle
@@ -31,7 +31,7 @@ To run this project, you will need to add the following environment variables to
 - Fullscreen mode
 - Cross platform
 
-  
+
 ## Installation
 
 Install my-project with npm
@@ -40,7 +40,7 @@ Install my-project with npm
   npm install my-project
   cd my-project
 ```
-    
+
 ## Run Locally
 
 Clone the project
@@ -67,7 +67,7 @@ Start the server
   npm run start
 ```
 
-  
+
 ## Running Tests
 
 To run tests, run the following command
@@ -76,7 +76,7 @@ To run tests, run the following command
   npm run test
 ```
 
-  
+
 ## Deployment
 
 To deploy this project run
@@ -85,17 +85,17 @@ To deploy this project run
   npm run deploy
 ```
 
-  
+
 ## Lessons Learned
 
 What did you learn while building this project? What challenges did you face and how did you overcome them?
 
-  
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-  
+
 ## Authors
 
 - [@stejul](https://www.github.com/stejul)
