@@ -1,10 +1,4 @@
-from dagster import (
-    DagsterInvalidConfigDefinitionError,
-    Output,
-    OutputDefinition,
-    solid,
-    pipeline,
-)
+from dagster import Output, OutputDefinition, solid, pipeline
 from dagster_aws.s3 import S3Coordinate
 from typing import List
 from os import walk
