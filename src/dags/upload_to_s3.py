@@ -10,8 +10,12 @@ from dagster import (
 from dagster_aws.s3 import S3Coordinate
 from typing import List
 from os import walk
+from dotenv import load_dotenv
 import boto3
 import ntpath
+import os
+
+load_dotenv()
 
 
 @solid(
@@ -34,15 +38,15 @@ def upload_to_s3(
     s3 = boto3.client(
         service_name="s3",
         endpoint_url="http://localhost:9000",
-        aws_access_key_id="admin",
-        aws_secret_access_key="password",
+        aws_access_key_id=os.getenv("MINIO_USER"),
+        aws_secret_access_key=os.getenv("MINIO_PASSWORD"),
     )
 
     s3Resource = boto3.resource(
         service_name="s3",
         endpoint_url="http://localhost:9000",
-        aws_access_key_id="admin",
-        aws_secret_access_key="password",
+        aws_access_key_id=os.getenv("MINIO_USER"),
+        aws_secret_access_key=os.getenv("MINIO_PASSWORD"),
     )
 
     return_s3_coordinate: S3Coordinate = {"bucket": s3_coordinate["bucket"]}

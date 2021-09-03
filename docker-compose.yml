@@ -18,6 +18,9 @@ services:
     ports:
       - "9001:9001"
       - "9000:9000"
+    environment:
+      MINIO_ROOT_USER: "${MINIO_USER}"
+      MINIO_ROOT_PASSWORD: "${MINIO_PASSWORD}"
 #  postgres:
 #    container_name: postgres
 #    image: postgres:latest
@@ -51,7 +54,7 @@ services:
 #    command:
 #      - coordinator
 #    env_file:
-#      - environment
+#      - .env
 #
 #  broker:
 #    image: apache/druid:0.21.1
@@ -67,7 +70,7 @@ services:
 #    command:
 #      - broker
 #    env_file:
-#      - environment
+#      - .env
 #
 #  historical:
 #    image: apache/druid:0.21.1
@@ -84,7 +87,7 @@ services:
 #    command:
 #      - historical
 #    env_file:
-#      - environment
+#      - .env
 #
 #  middlemanager:
 #    image: apache/druid:0.21.1
@@ -102,7 +105,7 @@ services:
 #    command:
 #      - middleManager
 #    env_file:
-#      - environment
+#      - .env
 #
 #  router:
 #    image: apache/druid:0.21.1
@@ -118,4 +121,4 @@ services:
 #    command:
 #      - router
 #    env_file:
-#      - environment
+#      - .env
