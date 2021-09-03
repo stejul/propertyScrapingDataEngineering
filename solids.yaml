@@ -1,0 +1,6 @@
+solids:
+  uploadObjectToS3:
+    inputs:
+      s3_coordinate:
+        bucket: "apt-dump"
+        key: "dumps"

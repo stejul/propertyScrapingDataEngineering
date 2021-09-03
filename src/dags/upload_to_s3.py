@@ -8,7 +8,6 @@ from dagster import (
     String,
 )
 from dagster_aws.s3 import S3Coordinate
-from typing import List
 from os import walk
 from dotenv import load_dotenv
 import boto3
@@ -20,16 +19,16 @@ load_dotenv()
 
 @solid(
     name="uploadObjectToS3",
-    input_defs=[
-        InputDefinition(name="local_files", dagster_type=DagsterList[String]),
-        InputDefinition(name="s3_coordinate", dagster_type=S3Coordinate),
-    ],
-    output_defs=[OutputDefinition(dagster_type=S3Coordinate)],
     description="""
     **Uploads the dump files to S3 Server**
     ### Authors
     stejul <https://github.com/stejul>
     """,
+    input_defs=[
+        InputDefinition(name="local_files", dagster_type=DagsterList[String]),
+        InputDefinition(name="s3_coordinate", dagster_type=S3Coordinate),
+    ],
+    output_defs=[OutputDefinition(dagster_type=S3Coordinate)],
 )
 def upload_to_s3(
     context, local_files: DagsterList[String], s3_coordinate: S3Coordinate
@@ -69,12 +68,10 @@ def upload_to_s3(
 
 @solid(
     name="getListOfFiles",
-    output_defs=[OutputDefinition(dagster_type=DagsterList[String])],
     description="""
     Checks the data directory and returns a list of files
-    ### Author
-    stejul <https://github.com/stejul
     """,
+    output_defs=[OutputDefinition(dagster_type=DagsterList[String])],
 )
 def get_all_csv_files(context) -> DagsterList[String]:
     result: DagsterList[String] = []
@@ -85,6 +82,9 @@ def get_all_csv_files(context) -> DagsterList[String]:
     return result
 
 
-@pipeline()
-def execute_pipeline():
+@pipeline(
+    name="uploadDataDumpToS3",
+    description="Upload objects given as a list of files to the S3 Storage Server",
+)
+def execute_s3_pipeline():
     upload_to_s3(local_files=get_all_csv_files())
