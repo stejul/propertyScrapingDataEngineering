@@ -1,4 +1,13 @@
-from dagster import Output, OutputDefinition, solid, pipeline
+from dagster import (
+    Output,
+    InputDefinition,
+    OutputDefinition,
+    solid,
+    pipeline,
+    ModeDefinition,
+    List as DagsterList,
+    String,
+)
 from dagster_aws.s3 import S3Coordinate
 from typing import List
 from os import walk
@@ -8,11 +17,15 @@ import ntpath
 
 @solid(
     name="uploadObjectToS3",
-    output_defs=[OutputDefinition(dagster_type=S3Coordinate, name="s3Upload")],
+    input_defs=[
+        InputDefinition(name="local_files", dagster_type=DagsterList[String]),
+        InputDefinition(name="s3_coordinate", dagster_type=S3Coordinate),
+    ],
+    output_defs=[OutputDefinition(dagster_type=S3Coordinate)],
     description="Upload given file to S3 server",
 )
 def upload_to_s3(
-    context, local_files: List[str], s3_coordinate: S3Coordinate
+    context, local_files: DagsterList[String], s3_coordinate: S3Coordinate
 ) -> S3Coordinate:
 
     s3 = boto3.client(
@@ -37,26 +50,29 @@ def upload_to_s3(
         if s3Resource.Bucket(return_s3_coordinate["bucket"]).creation_date is None:
             s3.create_bucket(Bucket=return_s3_coordinate["bucket"])
 
-        context.log.info(file)
         s3.upload_file(
             Filename=f"{head}/{tail}",
             Bucket=return_s3_coordinate["bucket"],
             Key=return_s3_coordinate["key"],
         )
-        context.log.info("Uploaded successfully")
+        context.log.info(f"Uploaded successfully - {file}")
 
-    return return_s3_coordinate
+    return Output(return_s3_coordinate)
 
 
-@solid(name="getListOfFiles")
-def get_all_csv_files(context) -> List[str]:
-    list = []
+@solid(
+    name="getListOfFiles",
+    output_defs=[OutputDefinition(dagster_type=DagsterList[String])],
+)
+def get_all_csv_files(context) -> DagsterList[String]:
+    result: DagsterList[String] = []
     for (dirpath, dirname, filenames) in walk("src/data/"):
         for file in filenames:
-            list.append(f"src/data/{file}")
-    return Output(value=list)
+            context.log.info(f"Found following file in directory: src/data/{file}")
+            result.append(f"src/data/{file}")
+    return result
 
 
-@pipeline
+@pipeline()
 def execute_pipeline():
     upload_to_s3(local_files=get_all_csv_files())
