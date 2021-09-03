@@ -1,12 +1,14 @@
 
 # Project Title
 
-A brief description of what this project does and who it's for
+A example project where I test out different data engineering tools, like Apache Druid, PySPark and Dagster.
+
+With scrapy im extracting some key information on various apartments, load them up into a S3 storage and run it in an DWH.
 
 
 ## Tech Stack
 
-- BeautifulSoup
+- Scrapy
 - Dagster
 - Apache Druid
 - Docker
@@ -19,26 +21,21 @@ A brief description of what this project does and who it's for
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`MINIO_USER`
 
-`ANOTHER_API_KEY`
-
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+`MINIO_PASSWORD`
 
 
 ## Installation
 
-Install my-project with npm
+Install my-project with pip or poetry
 
 ```bash
-  npm install my-project
-  cd my-project
+  pip install -r requirements.txt
+```
+Or
+```bash
+  poetry install
 ```
 
 ## Run Locally
@@ -46,28 +43,23 @@ Install my-project with npm
 Clone the project
 
 ```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
+  git clone https://github.com/stejul/dataEngineeringExample
 ```
 
 Install dependencies
-
 ```bash
-  npm install
+  poetry install
 ```
+or `pip install -r requirements.txt`
 
 Start the server
 
 ```bash
-  npm run start
+
 ```
 
 
+# WIP SECTION
 ## Running Tests
 
 To run tests, run the following command
