@@ -4,7 +4,6 @@ from dagster import (
     OutputDefinition,
     solid,
     pipeline,
-    ModeDefinition,
     List as DagsterList,
     String,
 )
@@ -22,7 +21,11 @@ import ntpath
         InputDefinition(name="s3_coordinate", dagster_type=S3Coordinate),
     ],
     output_defs=[OutputDefinition(dagster_type=S3Coordinate)],
-    description="Upload given file to S3 server",
+    description="""
+    **Uploads the dump files to S3 Server**
+    ### Authors
+    stejul <https://github.com/stejul>
+    """,
 )
 def upload_to_s3(
     context, local_files: DagsterList[String], s3_coordinate: S3Coordinate
@@ -63,6 +66,11 @@ def upload_to_s3(
 @solid(
     name="getListOfFiles",
     output_defs=[OutputDefinition(dagster_type=DagsterList[String])],
+    description="""
+    Checks the data directory and returns a list of files
+    ### Author
+    stejul <https://github.com/stejul
+    """,
 )
 def get_all_csv_files(context) -> DagsterList[String]:
     result: DagsterList[String] = []
