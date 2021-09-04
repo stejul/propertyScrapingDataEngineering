@@ -73,18 +73,11 @@ def upload_to_s3(
     """,
     output_defs=[OutputDefinition(dagster_type=DagsterList[String])],
 )
-def get_all_csv_files(context) -> DagsterList[String]:
+def get_all_csv_files(context, info_scraper) -> DagsterList[String]:
+    context.log.info(f"Info dump is available {info_scraper}")
     result: DagsterList[String] = []
     for (dirpath, dirname, filenames) in walk("src/data/"):
         for file in filenames:
             context.log.info(f"Found following file in directory: src/data/{file}")
             result.append(f"src/data/{file}")
     return result
-
-
-@pipeline(
-    name="uploadDataDumpToS3",
-    description="Upload objects given as a list of files to the S3 Storage Server",
-)
-def execute_s3_pipeline():
-    upload_to_s3(local_files=get_all_csv_files())

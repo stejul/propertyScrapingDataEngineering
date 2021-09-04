@@ -5,8 +5,6 @@ import pandas as pd
 class ImmoAptInfoScraper(scrapy.Spider):
     name = "immolaendle_apt_info_scraper"
 
-    # start_urls = ["https://www.laendleimmo.at/immobilien/wohnung/terrassenwohnung/vorarlberg/feldkirch/150653?searchPageNumer=1"]
-
     custom_settings = {
         "AUTOTHROTTLE_ENABLED": True,
         "FEED_EXPORT_ENCODING": "utf-8-sig",
