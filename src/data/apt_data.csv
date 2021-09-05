@@ -1,21 +1,21 @@
 id,title,price,number_of_room,apt_size,district,city,street_address
-0,Geniale 2-Zimmer Wohnung - Top 01,€ 720,2 Zimmer,"48,66 m",Bludenz,Thüringen," , Alte Landstr. 1 "
-2,"3 Zimmer Wohnung zu vermieten, Top 5",€ 648,3 Zimmer,"56,82 m",Bludenz,Bludesch," , Mühleplatz 5 "
-4,2 Zimmer Mietwohnung im Altstadtkern von Bludenz,€ 790,2 Zimmer,"72,8 m",Bludenz,Bludenz,
-6,Sonnige 3-Zimmer-Maisonette mit Balkon,"€ 955,52",3 Zimmer,69 m,Bregenz,Wolfurt,
-8,Helle 2-Zimmerwohnung in guter Wohnlage,"€ 871,61",2 Zimmer,"52,15 m",Dornbirn,Dornbirn,
-10,3-Zimmer Wohnung mit Balkon,"€ 858,36",3 Zimmer,70 m,Feldkirch,Frastanz,
-12,Großzügige 2-Zimmer Wohnung,€ 800,2 Zimmer,63 m,Dornbirn,Hohenems,
+0,2 Zimmer Mietwohnung im Altstadtkern von Bludenz,€ 790,2 Zimmer,"72,8 m",Bludenz,Bludenz,
+2,Sonnige 3-Zimmer-Maisonette mit Balkon,"€ 955,52",3 Zimmer,69 m,Bregenz,Wolfurt,
+4,Helle 2-Zimmerwohnung in guter Wohnlage,"€ 871,61",2 Zimmer,"52,15 m",Dornbirn,Dornbirn,
+6,3-Zimmer Wohnung mit Balkon,"€ 858,36",3 Zimmer,70 m,Feldkirch,Frastanz,
+8,Freiraum - moderne 2-Zimmer-Wohnung mit viel Licht und Platz,€ 870,2 Zimmer,"54,1 m",Bregenz,Bregenz," , Feldmoosgasse 1b "
+10,Großzügige 2-Zimmer Wohnung,€ 800,2 Zimmer,63 m,Dornbirn,Hohenems,
+12,Exklusive 2-Zimmer Wohnung mit Balkon,€ 948,2 Zimmer,54 m,Feldkirch,Feldkirch,
 14,3-Zimmer Wohnung in ruhiger Lage von Dornbirn,€ 900,3 Zimmer,60 m,Dornbirn,Dornbirn,
-16,2-Zimmer Wohnung mit exklusiver Ausstattung,€ 890,2 Zimmer,53 m,Dornbirn,Dornbirn," , Frühlingsstraße 14 "
-18,Freiraum - moderne 2-Zimmer-Wohnung mit viel Licht und Platz,€ 870,2 Zimmer,"54,1 m",Bregenz,Bregenz," , Feldmoosgasse 1b "
-20,Exklusive 2-Zimmer Wohnung mit Balkon,€ 948,2 Zimmer,54 m,Feldkirch,Feldkirch,
-22,Zwischen Bodensee und Pfänder,€ 1.129,2 Zimmer,"72,85 m",Bregenz,Bregenz," , Belruptstraße 55 "
-24,Wohnen am Bodensee!,"€ 724,63",2 Zimmer,"46,45 m",Bregenz,Bregenz,
-26,"Schöne 3,5-Zimmer Wohnung in historischem Gebäude",€ 1.406,"3,5 Zimmer",130 m,Bludenz,Nenzing,
-28,Große 2-Zimmer Wohnung in historischem Gebäude,"€ 897,48",2 Zimmer,"66,35 m",Bludenz,Nenzing,
-30,Neubau! 3-Zimmer Wohnung in exklusiver Lage,"€ 1.605,63",3 Zimmer,146371,Dornbirn,Dornbirn,
-32,2-Zimmer-Stadtwohnung,"€ 877,20",2 Zimmer,54 m,Dornbirn,Dornbirn," , Riedgasse 32 "
+16,Zwischen Bodensee und Pfänder,€ 1.129,2 Zimmer,"72,85 m",Bregenz,Bregenz," , Belruptstraße 55 "
+18,"Schöne 3,5-Zimmer Wohnung in historischem Gebäude",€ 1.406,"3,5 Zimmer",130 m,Bludenz,Nenzing,
+20,Große 2-Zimmer Wohnung in historischem Gebäude,"€ 897,48",2 Zimmer,"66,35 m",Bludenz,Nenzing,
+22,Neubau! 3-Zimmer Wohnung in exklusiver Lage,"€ 1.605,63",3 Zimmer,146371,Dornbirn,Dornbirn,
+24,2-Zimmer Wohnung mit exklusiver Ausstattung,€ 890,2 Zimmer,53 m,Dornbirn,Dornbirn," , Frühlingsstraße 14 "
+26,2-Zimmer-Stadtwohnung,"€ 877,20",2 Zimmer,54 m,Dornbirn,Dornbirn," , Riedgasse 32 "
+28,Wohnen am Bodensee!,"€ 724,63",2 Zimmer,"46,45 m",Bregenz,Bregenz,
+30,"3 Zimmer Wohnung zu vermieten, Top 5",€ 648,3 Zimmer,"56,82 m",Bludenz,Bludesch," , Mühleplatz 5 "
+32,Geniale 2-Zimmer Wohnung - Top 01,€ 720,2 Zimmer,"48,66 m",Bludenz,Thüringen," , Alte Landstr. 1 "
 34,Tolle 2 Zimmerwohnung mit Balkon in Hohenems,€ 840,2 Zimmer,57 m,Dornbirn,Hohenems,
 36,Neubau: Tolle 2 Zimmerwohnung mit Balkon und ruhiger Lage in Götzis zu vermieten,€ 890,2 Zimmer,"58,03 m",Feldkirch,Götzis,
 38,"2,5 Zimmerwohnung mit wundervollem Blick über das Rheintal und die schweizer Berge",€ 890,"2,5 Zimmer",54 m,Feldkirch,Götzis,
@@ -106,7 +106,7 @@ id,title,price,number_of_room,apt_size,district,city,street_address
 220,"Sehr gemütliche 2,5 Zimmer-Wohnung in Lauterach",€ 731,2 Zimmer,53 m,Bregenz,Lauterach," , Bundesstraße 103b "
 222,"Lichtdurchflutete 3,5-Zimmer-Dachgeschoßwohnung",€ 1.099,3 Zimmer,73 m,Dornbirn,Dornbirn," , Riedgasse 20 "
 224,"Attraktive, exklusive 4-Zimmer-Loft-Wohnung",€ 1.712,4 Zimmer,105 m,Dornbirn,Dornbirn," , Sandgasse 13d "
-226,Exclusive 3-Zimmer-Wohnung mit traumhafter Seesicht in Lochau,€ 1.340,3 Zimmer,76 m,Bregenz,Lochau,"  , Lindauer Straße 16b "
+226,Exclusive 3-Zimmer-Wohnung mit traumhafter Seesicht in Lochau,€ 1.340,3 Zimmer,76 m,Bregenz,Lochau," , Lindauer Straße 16b "
 228,Großzügige 2-Zimmer-Wohnung in ruhiger Lage in Dornbirn,€ 895,2 Zimmer,60 m,Dornbirn,Dornbirn," , Fliederweg 9a "
 230,"Schöne 3,5-Zimmer-Wohnung in naher Zentrumslage",€ 1.023,3 Zimmer,84 m,Dornbirn,Dornbirn," , Marktstraße 65 "
 232,"Schöne 4,5-Zimmer-Wohnung im Dornbirner Oberdorf",€ 1.090,4 Zimmer,95 m,Dornbirn,Dornbirn," , Weißachergasse 23 "
@@ -177,8 +177,8 @@ id,title,price,number_of_room,apt_size,district,city,street_address
 372,Schöne 2-Zimmer-Terrassenwohnung in Lustenau,€ 898,2 Zimmer,53 m,Dornbirn,Lustenau,
 374,große 3-Zimmerwohnung in Bezau ab 01.10.2021 zu vermieten,€ 1.026,3 Zimmer,101 m,Bregenz,Bezau," , Bahnhof 31 "
 376,Attraktive 2. Zimerwohnung in ruhiger Lage in Hard!,€ 895,2 Zimmer,"53,35 m",Bregenz,Hard,
-378,3 Zimmerwohnung in Hard!,"€ 1.069,09",3 Zimmer,78 m,Bregenz,Hard,
-380,Attraktive und hervorragend eingeteilte 2-Zi.Whg. in ruhiger Lage und Seenähe,€ 830,2 Zimmer,"56,13 m",Bregenz,Hard,
+378,Attraktive und hervorragend eingeteilte 2-Zi.Whg. in ruhiger Lage und Seenähe,€ 830,2 Zimmer,"56,13 m",Bregenz,Hard,
+380,3 Zimmerwohnung in Hard!,"€ 1.069,09",3 Zimmer,78 m,Bregenz,Hard,
 382,Luxuriöse Neubauwohnung in Dornbirn!,"€ 1.270,50",2 Zimmer,69 m,Dornbirn,Dornbirn," , Oberer Kirchweg "
 384,3 Zimmerwohnung in Dornbirn,"€ 989,29",3 Zimmer,"58,6 m",Dornbirn,Dornbirn," , Vordere Achmühlestraße "
 388,Neuwertige 3-Zimmer-Terrassenwohnung in Altach,€ 1.348,3 Zimmer,"85,5 m",Feldkirch,Altach," , Große Wies 16 "
@@ -256,8 +256,8 @@ id,title,price,number_of_room,apt_size,district,city,street_address
 540,"3,5-Zimmer- Mietwohnung in Kennelbach","€ 873,50","3,5 Zimmer","71,6 m",Bregenz,Kennelbach," , In der Telle 1 "
 542,"Großzügige 2,5-Zimmer Wohnung",€ 900,N/A,80 m,Bregenz,Bregenz," , Brandgasse 3 "
 544,Pool vor der Haustüre - 2 Zimmer-Wohnung mit Seeblick in Bregenz!,"€ 906,67",2 Zimmer,"59,31 m",Bregenz,Bregenz,
-546,"2,5 Zimmer-Wohnung im Grünen - Hörbranz!",€ 862,2 Zimmer,80 m,Bregenz,Hörbranz,
-548,Klein aber fein - möblierte 1 -Zimmer-Wohnung in Lochau!,€ 520,1 Zimmer,45 m,Bregenz,Lochau,
+546,Klein aber fein - möblierte 1 -Zimmer-Wohnung in Lochau!,€ 520,1 Zimmer,45 m,Bregenz,Lochau,
+548,"2,5 Zimmer-Wohnung im Grünen - Hörbranz!",€ 862,2 Zimmer,80 m,Bregenz,Hörbranz,
 550,Mitten in der City von Bregenz,€ 700,3 Zimmer,68 m,Bregenz,Bregenz,
 552,Traumhafte 3 Zimmer-Wohnung mitten im Zentrum von Feldkirch!!,€ 1.085,3 Zimmer,"76,8 m",Feldkirch,Feldkirch,
 554,Schöne 2 Zimmer-Wohnung in ruhiger Lage von Hörbranz!,€ 760,2 Zimmer,50 m,Bregenz,Hörbranz,
@@ -366,97 +366,97 @@ id,title,price,number_of_room,apt_size,district,city,street_address
 760,große 2-Zimmerwohnung - Herrenried - Neubau ohne Maklergebühr,€ 1.089,2 Zimmer,"61,49 m",Dornbirn,Hohenems," , Nibelungenstrasse 13 "
 762,1-Zimmer-Wohnung in ruhiger Lage in Bregenz,"€ 482,55",1 Zimmer,24 m,Bregenz,Bregenz," , Brandgasse 15 Top 12a "
 764,Provisionsfreie DG Wohnung in der Bregenzer Fußgängerzone,€ 1.005,3 Zimmer,75 m,Bregenz,Bregenz," , Deuringstrasse 5 "
-766,NEUBAU: Schöne 2-Zimmer- Wohnung mit Balkon,€ 840,2 Zimmer,"46,35 m",Bregenz,Höchst," , Kreuzdorfstraße 29, Top 7 "
-768,Möblierte 2-Zimmer-Neubau Wohnung in ruhiger Lage!,€ 926,2 Zimmer,55 m,Dornbirn,Lustenau," , Sandstraße 16 "
-770,sonnige 3 Zimmer Wohnung in zentraler Lage,€ 1.145,3 Zimmer,72 m,Feldkirch,Feldkirch," , Pfarrer-Gunz-Str 5 "
-772,Traumhaftes 2 stöckiges Penthouse in Lustenau,€ 1.750,3 Zimmer,"114,75 m",Dornbirn,Lustenau,
-774,"Schöne 4,5- Zimmerwohnung mit Seeblick",€ 1.185,"4,5 Zimmer",125 m,Bregenz,Hörbranz,
-776,"Beste Lage am Kaiserstrand, moderne 2 Zi Whg zum 1.10.21",€ 1.250,N/A,54 m,Bregenz,Lochau,
-778,"Pfänderhang: Angenehmes DG-Single-Apartment mit ""Fenster zum See"" ....",€ 792,N/A,45 m,Bregenz,Bregenz," , Gehren "
-780,Wunderschöne 1-Zimmerwohnung in Feldkirch Tisis,"€ 603,50",N/A,35 m,Feldkirch,Feldkirch," , Liechtensteinerstrasse 90 "
-782,Lässige 3-Zimmer Gartenwohnung im Zentrum von Dornbirn,€ 1.350,3 Zimmer,"66,19 m",Dornbirn,Dornbirn,
-784,Stadtwohnung zum Verlieben!,€ 1.065,2 Zimmer,66 m,Bregenz,Bregenz," , Bergstraße "
-786,Elegante 2-Zimmer-Wohnung im Herzen von Bludenz (2.Bezug),€ 750,2 Zimmer,"48,09 m",Bludenz,Bludenz," , Werdenbergstraße 43c "
-788,Single-Appartement in Dornbirn-Hatlerdorf!,€ 475,1 Zimmer,"22,5 m",Dornbirn,Dornbirn,
-790,Loft-Wohnung neu renoviert,€ 1.500,N/A,127 m,Dornbirn,Lustenau," , Augartenstraße 27 "
-792,QULUMBUS - 2-Zimmer-Neubauwohnung - Top 5,"€ 1.011,17",2 Zimmer,"56,38 m",Feldkirch,Klaus," , Walgaustraße 21 "
-794,"Sonnige 2-Zimmer Wohnung mit großem, verglasten Balkon",€ 810,2 Zimmer,45 m,Dornbirn,Dornbirn," , Weizeneggerstraße 5 "
-796,Gemütliche 2-Zimmer-Wohnung in Lustenau,€ 655,2 Zimmer,"54,89 m",Dornbirn,Lustenau,
-798,Terrassenwohnung mit Blick ins Grüne im Zentrum von Bregenz,"€ 1.198,89",3 Zimmer,77 m,Bregenz,Bregenz," , Römerstraße 19 "
-800,"Lichtdurchflutetes Appartement in Citynähe - Privat, ohne Makler!",€ 795,2 Zimmer,60 m,Bregenz,Bregenz," , Mariahilfstraße "
-802,Wohnen am Waldrand und Frutznähe in Rankweil,"€ 1.171,04",N/A,"74,34 m",Feldkirch,Rankweil,
-804,nette kleine 2 Zi.Wohnung mit Terrasse,"€ 702,50",2 Zimmer,53 m,Feldkirch,Feldkirch," , Neustadt "
-806,"Seltene 3-Zimmerwohnung mit Terrasse, Tiefgaragenplatz und perfekter Lage in Feldkirch",€ 1.199,3 Zimmer,"76,68 m",Feldkirch,Feldkirch," , Marktplatz 11 "
-808,QULUMBUS - 2-Zimmer-Neubauwohnung - Top 3,"€ 895,07",2 Zimmer,"50,38 m",Feldkirch,Klaus," , Walgaustraße 21 "
-810,Tolle Wohnung - Innenstadtlage,"€ 930,44",2 Zimmer,"72,9 m",Bregenz,Bregenz,
-812,"Zentrale 2,5-Zimmer-Mietwohnung mit Balkon","€ 833,46","2,5 Zimmer","82,19 m",Bregenz,Bregenz,
-814,1-Zi. Mietwohnung Dornbirn,Preis auf Anfrage,N/A,36 m,Dornbirn,Dornbirn," , Bergstraße "
-816,"Rankweil: Wundervolle 3,5-Zimmerwohnung (ca. 110m²) in Ruhelage zu vermieten!",€ 1.100,"3,5 Zimmer",110 m,Feldkirch,Rankweil,
-818,Großzügige 3-Zimmer-Wohnung in Gisingen,€ 1.170,3 Zimmer,"87,59 m",Feldkirch,Feldkirch," , Hauptstr. 52a "
-820,Hochwertige 4-Zi-Wohnung Feldkirch-Gisingen,€ 1.330,N/A,105 m,Feldkirch,Feldkirch," , Kapfstraße 8a "
-824,Schön sanierte 5-Zi.Wohnung in Lustenau,€ 1.030,N/A,90 m,Dornbirn,Lustenau," , Reichsstraße 58 "
-826,"Großzügige, schön sanierte 5-Zi.Wohnung in Lustenau",€ 1.240,N/A,120 m,Dornbirn,Lustenau," , Reichsstraße 58 "
-828,Lochau - Seenähe: Geräumige 2-Zi-Wohnung mit Sonnenbalkon ...,€ 875,"2,5 Zimmer",67 m,Bregenz,Lochau," , Hörbranzerstraße 10 "
-830,Gemütliche Dachgeschosswohnung in Lauterach,€ 965,"2,5 Zimmer",77 m,Bregenz,Lauterach," , Bahnhofstraße 18a "
-832,Sonnige 2-Zimmerterrassenwohnung zu vermieten,€ 690,2 Zimmer,"50,3 m",Bludenz,Nüziders," , Hinteroferst 11a "
-834,"Wunderbare 1,5-Zimmerwohnung in Feldkirch-Tosters zu vermieten!",€ 580,"1,5 Zimmer","37,55 m",Feldkirch,Feldkirch," , Egelseestraße 11 "
-836,Nette 1-Zimmerwohnung in der Feldkircher Stadt,€ 425,1 Zimmer,"28,15 m",Feldkirch,Feldkirch," , Ardetzenbergstraße 6a "
-838,"*Grenznah* Schöne, helle 3-Zimmerwohnung mit geräumigem Balkon in Feldkirch wartet auf Sie!",€ 1.175,3 Zimmer,"73,58 m",Feldkirch,Feldkirch," , Grißstraße 52 "
-840,"3-Zi.Wohnung, zweigeschossig mit großer Terrasse in Götzis",€ 965,N/A,70 m,Feldkirch,Götzis," , Dr.-Alfons-Heinzle-Str. 57 "
-842,kernsanierte 5 Zimmerwohnung,€ 1.570,5 Zimmer,160 m,Bludenz,Tschagguns," , Sandstrasse 14c "
-844,schöne 3-Zimmerwohnung in Mellau ab sofort zu vermieten,€ 1.060,3 Zimmer,80 m,Bregenz,Mellau," , Eggbühel 535 "
-846,Großzügige Dachwohnung ab sofort zu MIETEN!,€ 1.167,3 Zimmer,"95,81 m",Dornbirn,Lustenau,
-848,QULUMBUS - 2-Zimmer-Neubauwohnung - Top 10,"€ 938,49",2 Zimmer,"49,17 m",Feldkirch,Klaus," , Walgaustraße 21 "
-850,einfache kleine Stadtwohnung,€ 469,N/A,30 m,Feldkirch,Feldkirch," , Neustadt 38 "
-852,Wir haben Ihre Zukünftige 3-Zimmerwohnung in Feldkirch,€ 985,3 Zimmer,"74,95 m",Feldkirch,Feldkirch," , Riedteilweg 3b "
-854,Dachgeschoss-Wohnung in schöner Lage,€ 912,2 Zimmer,53 m,Bregenz,Bregenz,"  , Mehrerauerstraße 7 und 7a "
-856,2-ZI. Terrassen-Wohnung Wien,€ 1.102,N/A,58 m,Wien 21. Bezirk Floridsdorf,,
-858,LIVINGHOOD - 2-Zimmer-Neubauwohnung - Top 10,"€ 899,60",2 Zimmer,"49,02 m",Feldkirch,Feldkirch," , Siedlerweg 1 "
-860,LIVINGHOOD - 2-Zimmer-Neubauwohnung - Top 5,"€ 894,10",2 Zimmer,"49,02 m",Feldkirch,Feldkirch," , Siedlerweg 1 "
-862,LIVINGHOOD - 3-Zimmer-Neubauwohnung - Top 7,"€ 1.268,51",3 Zimmer,"72,7 m",Feldkirch,Feldkirch," , Siedlerweg 1 "
-864,Dachterrassen-Wohnung Wien,€ 1.760,N/A,89 m,Wien 21. Bezirk Floridsdorf,,
-868,2-Zi Mietwohnung Wien,€ 897,N/A,55 m,Wien 21. Bezirk Floridsdorf,,
-870,Tolle Dachgeschosswohnung in Dornbirn-Hatlerdorf zu vermieten,€ 958,"3,5 Zimmer","70,25 m",Dornbirn,Dornbirn," , "
-872,Traumwohnung in Traumlage,"€ 3.084,50",5 Zimmer,151 m,Bregenz,Lochau," , Am Kaiserstrand 2 "
-874,2-Zi Mietwohnung Wien 1210,€ 818,N/A,45 m,Wien 21. Bezirk Floridsdorf,,
-876,Gemütliche 3-Zimmerwohnung in Nenzing,€ 975,3 Zimmer,"74,06 m",Bludenz,Nenzing," , Inatschina 4 "
-878,Lichtdurchflutete 2-Zimmerwohnung im Herzen von Bludenz zu vermieten!,€ 825,2 Zimmer,"78,45 m",Bludenz,Bludenz," , Untersteinstraße 8 "
-880,neuwertige und großzügige Wohnung in ruhiger und sonniger Lage,"€ 1.130,86",2 Zimmer,"59,2 m",Feldkirch,Röthis," , Torkelweg 7a "
-882,großzügige und neuwertige Wohnung in ruhiger und sonniger Lage,"€ 1.664,36",3 Zimmer,97 m,Feldkirch,Röthis," , Torkelweg 7a "
-884,Gepflegte 3-Zimmerwohnung in Götzis zu vermieten!,€ 990,3 Zimmer,"69,23 m",Feldkirch,Götzis," , Ebenhochgasse 8 "
-886,2 Zi. Wohnung - gemütlich wohnen im Zentrum,"€ 732,15",2 Zimmer,"52,5 m",Bregenz,Andelsbuch,
-888,"Saniert, hell und gut geschnitten: 2,5-Zimmerwohnung mit 55 m² in Thüringen zu vermieten!",€ 799,"2,5 Zimmer",55 m,Bludenz,Thüringen,
-890,Gemütliche 2-Zimmerwohnung in der Feldkircher Stadt zu vermieten!,€ 739,2 Zimmer,"43,61 m",Feldkirch,Feldkirch," , Montfortgasse 13 "
-892,Moderne 3 Zimmer-Wohnung mit Balkon,€ 940,N/A,"57,5 m",Dornbirn,Lustenau," , Holzmühlestraße 16a "
-894,"Schöne 1,5-Zimmerwohnung in Feldkirch-Tosters zu vermieten!",€ 615,"1,5 Zimmer","40,13 m",Feldkirch,Feldkirch," , Riedteilweg 3b "
-896,Günstige 2-Zimmer-Wohnung in Frastanz,"€ 731,50",2 Zimmer,"49,4 m",Feldkirch,Frastanz," , Fellengattnerstraße "
-898,Leben im Loft - Lustenau,€ 1.300,1 Zimmer,117 m,Dornbirn,Lustenau,
-900,Mini-Maisonette in Dornbirn-Hatlerdorf,€ 595,1 Zimmer,32 m,Dornbirn,Dornbirn,
-902,"""Living in the South"" 3-Zimmerwohnung in Partenen zu vermieten","€ 708,43",3 Zimmer,"68,94 m",Bludenz,Partenen," , Feuerwehrstraße 76 a "
-904,"""Living in the South"" großzügige 3-Zimmerwohnun in Partenen zu vermieten","€ 825,78",3 Zimmer,"75,72 m",Bludenz,Partenen," , Feuerwehrstraße 76 "
-906,Diese 2-Zimmer-Dachgeschoss-Wohnung in Feldkirch-Nofels sucht einen Nachmieter!,€ 648,2 Zimmer,"47,72 m",Feldkirch,Feldkirch," , Schmittengässele 2 "
-908,Helle 2-Zimmer-Gartenwohnung in Lauterach,"€ 1.014,36",2 Zimmer,59 m,Bregenz,Lauterach," , Herrengutgasse "
-910,Schöne 3 Zimmerwohnung in Dornbirn zu vermieten,€ 980,3 Zimmer,74 m,Dornbirn,Dornbirn,
-912,Traumhafte 3-Zimmerwohnung in Göfis zu vermieten!,€ 1.050,3 Zimmer,"76,64 m",Feldkirch,Göfis," , Struba 2a "
-914,Maisonette-Wohnung in Bregenz Oberstadt zur Miete,€ 1.570,N/A,128 m,Bregenz,Bregenz,
-916,Apartment Rheintalblick,"€ 1.202,56",4 Zimmer,82 m,Bludenz,Gurtis," , Bazora 1 "
-918,"Tolle 2,5 Zimmeraltbauwohnung in der Feldkircher Innenstadt",€ 670,N/A,"54,3 m",Feldkirch,Feldkirch," , Zeughausgasse 6 "
-920,Freundliche 3 Zimmer-Wohnung mit Balkon im Herzen von Höchst,"€ 1.036,02",N/A,"71,33 m",Bregenz,Höchst," , Franz-Reiter-Straße 2 "
-922,2-Zimmerwohnung in Langenegg,€ 500,2 Zimmer,45 m,Bludenz,Langenegg,
-924,Attraktive 3 Zimmerwohnung!,€ 1.215,3 Zimmer,"91,46 m",Dornbirn,Hohenems,
-926,Exklusive Loftwohnung im Zentrum von Hohenems zu vermieten,Preis auf Anfrage,N/A,167019,Dornbirn,Hohenems,
-928,Dornbirn: Hübsche 2-Zi-Wohnung mit überdachter Terrasse - angenehm & ruhig ...,€ 885,N/A,58 m,Dornbirn,Dornbirn," , Lachenmahd "
-930,Generalsanierte 3 Zimmer-Wohnung Grenznähe FL,€ 1.090,3 Zimmer,70 m,Feldkirch,Feldkirch," , Franz-Unterberger-Strasse 1 "
-932,lebensHaus Röthis - sonnige und ruhige Lage in guter Nachbarschaft,"€ 1.154,10",2 Zimmer,59 m,Feldkirch,Röthis," , Torkelweg 7a "
-934,Große 3-Zimmer-Wohnung mit 2 Balkonen in Hohenems,€ 1.090,3 Zimmer,"91,4 m",Dornbirn,Hohenems,
-936,Penthouse in Hohenems mit großer Dachterrasse!,€ 1.590,3 Zimmer,104 m,Dornbirn,Hohenems," , Andreas-Hofer-Strasse 7 "
-938,KOMOD - Cohousing,€ 380,1 Zimmer,"11,7 m",Dornbirn,Dornbirn,
-942,3-Zimmer-Wohnung - Ideal als WG,€ 1.080,3 Zimmer,"51,7 m",Dornbirn,Dornbirn,
-944,Kleine 3-Zimmer-Wohnung in Lustenau!,"€ 673,97",3 Zimmer,49 m,Dornbirn,Lustenau," , Schillerstraße "
-946,Charmante 3-Zimmerwohnung in Klaus zu vermieten!,€ 883,3 Zimmer,"56,71 m",Feldkirch,Klaus," , Walgaustraße 7a "
-948,Schöne 4-Zimmer-Wohnung mit Balkon und Autoabstellplatz!,€ 1.290,N/A,"99,6 m",Bregenz,Hörbranz," , Richard-Sannwald-Platz 6 "
-950,Fantastische Gartenwohnung am Kaiserstrand zur Miete,"€ 2.592,40",3 Zimmer,88 m,Bregenz,Lochau,
-952,3 1/2 -Zi-Panoramawohnung mit 2 Terrassen,€ 1.030,N/A,90 m,Feldkirch,Feldkirch," , Liechtensteinerstraße 59 "
-954,"Neue 3-Zimmerwohnung im 1. Obergeschoss Dornbirn 94,61 m²","€ 1.685,92",3 Zimmer,"94,61 m",Dornbirn,Dornbirn," , Bergmannstraße 2 "
-956,Schöne renovierte 4 Zimmerwohnung in Bregenz,€ 1.250,N/A,90 m,Bregenz,Bregenz," , Felchenstraße "
-958,Büroräumlichkeiten / Top 6,Preis auf Anfrage,N/A,110 m,Bludenz,Bludenz," , Wichnerstraße "
+766,Möblierte 2-Zimmer-Neubau Wohnung in ruhiger Lage!,€ 926,2 Zimmer,55 m,Dornbirn,Lustenau," , Sandstraße 16 "
+768,sonnige 3 Zimmer Wohnung in zentraler Lage,€ 1.145,3 Zimmer,72 m,Feldkirch,Feldkirch," , Pfarrer-Gunz-Str 5 "
+770,Traumhaftes 2 stöckiges Penthouse in Lustenau,€ 1.750,3 Zimmer,"114,75 m",Dornbirn,Lustenau,
+772,"Schöne 4,5- Zimmerwohnung mit Seeblick",€ 1.185,"4,5 Zimmer",125 m,Bregenz,Hörbranz,
+774,"Beste Lage am Kaiserstrand, moderne 2 Zi Whg zum 1.10.21",€ 1.250,N/A,54 m,Bregenz,Lochau,
+776,"Pfänderhang: Angenehmes DG-Single-Apartment mit ""Fenster zum See"" ....",€ 792,N/A,45 m,Bregenz,Bregenz," , Gehren "
+778,Wunderschöne 1-Zimmerwohnung in Feldkirch Tisis,"€ 603,50",N/A,35 m,Feldkirch,Feldkirch," , Liechtensteinerstrasse 90 "
+780,Lässige 3-Zimmer Gartenwohnung im Zentrum von Dornbirn,€ 1.350,3 Zimmer,"66,19 m",Dornbirn,Dornbirn,
+782,Stadtwohnung zum Verlieben!,€ 1.065,2 Zimmer,66 m,Bregenz,Bregenz," , Bergstraße "
+784,Elegante 2-Zimmer-Wohnung im Herzen von Bludenz (2.Bezug),€ 750,2 Zimmer,"48,09 m",Bludenz,Bludenz," , Werdenbergstraße 43c "
+786,Single-Appartement in Dornbirn-Hatlerdorf!,€ 475,1 Zimmer,"22,5 m",Dornbirn,Dornbirn,
+788,Loft-Wohnung neu renoviert,€ 1.500,N/A,127 m,Dornbirn,Lustenau," , Augartenstraße 27 "
+790,QULUMBUS - 2-Zimmer-Neubauwohnung - Top 5,"€ 1.011,17",2 Zimmer,"56,38 m",Feldkirch,Klaus," , Walgaustraße 21 "
+792,"Sonnige 2-Zimmer Wohnung mit großem, verglasten Balkon",€ 810,2 Zimmer,45 m,Dornbirn,Dornbirn," , Weizeneggerstraße 5 "
+794,Gemütliche 2-Zimmer-Wohnung in Lustenau,€ 655,2 Zimmer,"54,89 m",Dornbirn,Lustenau,
+796,Terrassenwohnung mit Blick ins Grüne im Zentrum von Bregenz,"€ 1.198,89",3 Zimmer,77 m,Bregenz,Bregenz," , Römerstraße 19 "
+798,"Lichtdurchflutetes Appartement in Citynähe - Privat, ohne Makler!",€ 795,2 Zimmer,60 m,Bregenz,Bregenz," , Mariahilfstraße "
+800,Wohnen am Waldrand und Frutznähe in Rankweil,"€ 1.171,04",N/A,"74,34 m",Feldkirch,Rankweil,
+802,nette kleine 2 Zi.Wohnung mit Terrasse,"€ 702,50",2 Zimmer,53 m,Feldkirch,Feldkirch," , Neustadt "
+804,"Seltene 3-Zimmerwohnung mit Terrasse, Tiefgaragenplatz und perfekter Lage in Feldkirch",€ 1.199,3 Zimmer,"76,68 m",Feldkirch,Feldkirch," , Marktplatz 11 "
+806,QULUMBUS - 2-Zimmer-Neubauwohnung - Top 3,"€ 895,07",2 Zimmer,"50,38 m",Feldkirch,Klaus," , Walgaustraße 21 "
+808,Tolle Wohnung - Innenstadtlage,"€ 930,44",2 Zimmer,"72,9 m",Bregenz,Bregenz,
+810,"Zentrale 2,5-Zimmer-Mietwohnung mit Balkon","€ 833,46","2,5 Zimmer","82,19 m",Bregenz,Bregenz,
+812,1-Zi. Mietwohnung Dornbirn,Preis auf Anfrage,N/A,36 m,Dornbirn,Dornbirn," , Bergstraße "
+814,"Rankweil: Wundervolle 3,5-Zimmerwohnung (ca. 110m²) in Ruhelage zu vermieten!",€ 1.100,"3,5 Zimmer",110 m,Feldkirch,Rankweil,
+816,Großzügige 3-Zimmer-Wohnung in Gisingen,€ 1.170,3 Zimmer,"87,59 m",Feldkirch,Feldkirch," , Hauptstr. 52a "
+818,Hochwertige 4-Zi-Wohnung Feldkirch-Gisingen,€ 1.330,N/A,105 m,Feldkirch,Feldkirch," , Kapfstraße 8a "
+822,Schön sanierte 5-Zi.Wohnung in Lustenau,€ 1.030,N/A,90 m,Dornbirn,Lustenau," , Reichsstraße 58 "
+824,"Großzügige, schön sanierte 5-Zi.Wohnung in Lustenau",€ 1.240,N/A,120 m,Dornbirn,Lustenau," , Reichsstraße 58 "
+826,Lochau - Seenähe: Geräumige 2-Zi-Wohnung mit Sonnenbalkon ...,€ 875,"2,5 Zimmer",67 m,Bregenz,Lochau," , Hörbranzerstraße 10 "
+828,Gemütliche Dachgeschosswohnung in Lauterach,€ 965,"2,5 Zimmer",77 m,Bregenz,Lauterach," , Bahnhofstraße 18a "
+830,Sonnige 2-Zimmerterrassenwohnung zu vermieten,€ 690,2 Zimmer,"50,3 m",Bludenz,Nüziders," , Hinteroferst 11a "
+832,"Wunderbare 1,5-Zimmerwohnung in Feldkirch-Tosters zu vermieten!",€ 580,"1,5 Zimmer","37,55 m",Feldkirch,Feldkirch," , Egelseestraße 11 "
+834,Nette 1-Zimmerwohnung in der Feldkircher Stadt,€ 425,1 Zimmer,"28,15 m",Feldkirch,Feldkirch," , Ardetzenbergstraße 6a "
+836,"*Grenznah* Schöne, helle 3-Zimmerwohnung mit geräumigem Balkon in Feldkirch wartet auf Sie!",€ 1.175,3 Zimmer,"73,58 m",Feldkirch,Feldkirch," , Grißstraße 52 "
+838,"3-Zi.Wohnung, zweigeschossig mit großer Terrasse in Götzis",€ 965,N/A,70 m,Feldkirch,Götzis," , Dr.-Alfons-Heinzle-Str. 57 "
+840,kernsanierte 5 Zimmerwohnung,€ 1.570,5 Zimmer,160 m,Bludenz,Tschagguns," , Sandstrasse 14c "
+842,schöne 3-Zimmerwohnung in Mellau ab sofort zu vermieten,€ 1.060,3 Zimmer,80 m,Bregenz,Mellau," , Eggbühel 535 "
+844,Großzügige Dachwohnung ab sofort zu MIETEN!,€ 1.167,3 Zimmer,"95,81 m",Dornbirn,Lustenau,
+846,QULUMBUS - 2-Zimmer-Neubauwohnung - Top 10,"€ 938,49",2 Zimmer,"49,17 m",Feldkirch,Klaus," , Walgaustraße 21 "
+848,einfache kleine Stadtwohnung,€ 469,N/A,30 m,Feldkirch,Feldkirch," , Neustadt 38 "
+850,Wir haben Ihre Zukünftige 3-Zimmerwohnung in Feldkirch,€ 985,3 Zimmer,"74,95 m",Feldkirch,Feldkirch," , Riedteilweg 3b "
+852,Dachgeschoss-Wohnung in schöner Lage,€ 912,2 Zimmer,53 m,Bregenz,Bregenz," , Mehrerauerstraße 7 und 7a "
+854,2-ZI. Terrassen-Wohnung Wien,€ 1.102,N/A,58 m,Wien 21. Bezirk Floridsdorf,,
+856,LIVINGHOOD - 2-Zimmer-Neubauwohnung - Top 10,"€ 899,60",2 Zimmer,"49,02 m",Feldkirch,Feldkirch," , Siedlerweg 1 "
+858,LIVINGHOOD - 2-Zimmer-Neubauwohnung - Top 5,"€ 894,10",2 Zimmer,"49,02 m",Feldkirch,Feldkirch," , Siedlerweg 1 "
+860,LIVINGHOOD - 3-Zimmer-Neubauwohnung - Top 7,"€ 1.268,51",3 Zimmer,"72,7 m",Feldkirch,Feldkirch," , Siedlerweg 1 "
+862,Dachterrassen-Wohnung Wien,€ 1.760,N/A,89 m,Wien 21. Bezirk Floridsdorf,,
+866,2-Zi Mietwohnung Wien,€ 897,N/A,55 m,Wien 21. Bezirk Floridsdorf,,
+868,Tolle Dachgeschosswohnung in Dornbirn-Hatlerdorf zu vermieten,€ 958,"3,5 Zimmer","70,25 m",Dornbirn,Dornbirn," , "
+870,Traumwohnung in Traumlage,"€ 3.084,50",5 Zimmer,151 m,Bregenz,Lochau," , Am Kaiserstrand 2 "
+872,2-Zi Mietwohnung Wien 1210,€ 818,N/A,45 m,Wien 21. Bezirk Floridsdorf,,
+874,Gemütliche 3-Zimmerwohnung in Nenzing,€ 975,3 Zimmer,"74,06 m",Bludenz,Nenzing," , Inatschina 4 "
+876,Lichtdurchflutete 2-Zimmerwohnung im Herzen von Bludenz zu vermieten!,€ 825,2 Zimmer,"78,45 m",Bludenz,Bludenz," , Untersteinstraße 8 "
+878,neuwertige und großzügige Wohnung in ruhiger und sonniger Lage,"€ 1.130,86",2 Zimmer,"59,2 m",Feldkirch,Röthis," , Torkelweg 7a "
+880,großzügige und neuwertige Wohnung in ruhiger und sonniger Lage,"€ 1.664,36",3 Zimmer,97 m,Feldkirch,Röthis," , Torkelweg 7a "
+882,Gepflegte 3-Zimmerwohnung in Götzis zu vermieten!,€ 990,3 Zimmer,"69,23 m",Feldkirch,Götzis," , Ebenhochgasse 8 "
+884,2 Zi. Wohnung - gemütlich wohnen im Zentrum,"€ 732,15",2 Zimmer,"52,5 m",Bregenz,Andelsbuch,
+886,"Saniert, hell und gut geschnitten: 2,5-Zimmerwohnung mit 55 m² in Thüringen zu vermieten!",€ 799,"2,5 Zimmer",55 m,Bludenz,Thüringen,
+888,Gemütliche 2-Zimmerwohnung in der Feldkircher Stadt zu vermieten!,€ 739,2 Zimmer,"43,61 m",Feldkirch,Feldkirch," , Montfortgasse 13 "
+890,Moderne 3 Zimmer-Wohnung mit Balkon,€ 940,N/A,"57,5 m",Dornbirn,Lustenau," , Holzmühlestraße 16a "
+892,"Schöne 1,5-Zimmerwohnung in Feldkirch-Tosters zu vermieten!",€ 615,"1,5 Zimmer","40,13 m",Feldkirch,Feldkirch," , Riedteilweg 3b "
+894,Günstige 2-Zimmer-Wohnung in Frastanz,"€ 731,50",2 Zimmer,"49,4 m",Feldkirch,Frastanz," , Fellengattnerstraße "
+896,Leben im Loft - Lustenau,€ 1.300,1 Zimmer,117 m,Dornbirn,Lustenau,
+898,Mini-Maisonette in Dornbirn-Hatlerdorf,€ 595,1 Zimmer,32 m,Dornbirn,Dornbirn,
+900,"""Living in the South"" 3-Zimmerwohnung in Partenen zu vermieten","€ 708,43",3 Zimmer,"68,94 m",Bludenz,Partenen," , Feuerwehrstraße 76 a "
+902,"""Living in the South"" großzügige 3-Zimmerwohnun in Partenen zu vermieten","€ 825,78",3 Zimmer,"75,72 m",Bludenz,Partenen," , Feuerwehrstraße 76 "
+904,Diese 2-Zimmer-Dachgeschoss-Wohnung in Feldkirch-Nofels sucht einen Nachmieter!,€ 648,2 Zimmer,"47,72 m",Feldkirch,Feldkirch," , Schmittengässele 2 "
+906,Helle 2-Zimmer-Gartenwohnung in Lauterach,"€ 1.014,36",2 Zimmer,59 m,Bregenz,Lauterach," , Herrengutgasse "
+908,Schöne 3 Zimmerwohnung in Dornbirn zu vermieten,€ 980,3 Zimmer,74 m,Dornbirn,Dornbirn,
+910,Traumhafte 3-Zimmerwohnung in Göfis zu vermieten!,€ 1.050,3 Zimmer,"76,64 m",Feldkirch,Göfis," , Struba 2a "
+912,Maisonette-Wohnung in Bregenz Oberstadt zur Miete,€ 1.570,N/A,128 m,Bregenz,Bregenz,
+914,Apartment Rheintalblick,"€ 1.202,56",4 Zimmer,82 m,Bludenz,Gurtis," , Bazora 1 "
+916,"Tolle 2,5 Zimmeraltbauwohnung in der Feldkircher Innenstadt",€ 670,N/A,"54,3 m",Feldkirch,Feldkirch," , Zeughausgasse 6 "
+918,Freundliche 3 Zimmer-Wohnung mit Balkon im Herzen von Höchst,"€ 1.036,02",N/A,"71,33 m",Bregenz,Höchst," , Franz-Reiter-Straße 2 "
+920,2-Zimmerwohnung in Langenegg,€ 500,2 Zimmer,45 m,Bludenz,Langenegg,
+922,Attraktive 3 Zimmerwohnung!,€ 1.215,3 Zimmer,"91,46 m",Dornbirn,Hohenems,
+924,Exklusive Loftwohnung im Zentrum von Hohenems zu vermieten,Preis auf Anfrage,N/A,167019,Dornbirn,Hohenems,
+926,Dornbirn: Hübsche 2-Zi-Wohnung mit überdachter Terrasse - angenehm & ruhig ...,€ 885,N/A,58 m,Dornbirn,Dornbirn,"  , Lachenmahd "
+928,Generalsanierte 3 Zimmer-Wohnung Grenznähe FL,€ 1.090,3 Zimmer,70 m,Feldkirch,Feldkirch," , Franz-Unterberger-Strasse 1 "
+930,lebensHaus Röthis - sonnige und ruhige Lage in guter Nachbarschaft,"€ 1.154,10",2 Zimmer,59 m,Feldkirch,Röthis," , Torkelweg 7a "
+932,Große 3-Zimmer-Wohnung mit 2 Balkonen in Hohenems,€ 1.090,3 Zimmer,"91,4 m",Dornbirn,Hohenems,
+934,Penthouse in Hohenems mit großer Dachterrasse!,€ 1.590,3 Zimmer,104 m,Dornbirn,Hohenems," , Andreas-Hofer-Strasse 7 "
+936,KOMOD - Cohousing,€ 380,1 Zimmer,"11,7 m",Dornbirn,Dornbirn,
+940,3-Zimmer-Wohnung - Ideal als WG,€ 1.080,3 Zimmer,"51,7 m",Dornbirn,Dornbirn,
+942,Kleine 3-Zimmer-Wohnung in Lustenau!,"€ 673,97",3 Zimmer,49 m,Dornbirn,Lustenau," , Schillerstraße "
+944,Charmante 3-Zimmerwohnung in Klaus zu vermieten!,€ 883,3 Zimmer,"56,71 m",Feldkirch,Klaus," , Walgaustraße 7a "
+946,Schöne 4-Zimmer-Wohnung mit Balkon und Autoabstellplatz!,€ 1.290,N/A,"99,6 m",Bregenz,Hörbranz," , Richard-Sannwald-Platz 6 "
+948,Fantastische Gartenwohnung am Kaiserstrand zur Miete,"€ 2.592,40",3 Zimmer,88 m,Bregenz,Lochau,
+950,3 1/2 -Zi-Panoramawohnung mit 2 Terrassen,€ 1.030,N/A,90 m,Feldkirch,Feldkirch," , Liechtensteinerstraße 59 "
+952,"Neue 3-Zimmerwohnung im 1. Obergeschoss Dornbirn 94,61 m²","€ 1.685,92",3 Zimmer,"94,61 m",Dornbirn,Dornbirn," , Bergmannstraße 2 "
+954,Schöne renovierte 4 Zimmerwohnung in Bregenz,€ 1.250,N/A,90 m,Bregenz,Bregenz," , Felchenstraße "
+956,Büroräumlichkeiten / Top 6,Preis auf Anfrage,N/A,110 m,Bludenz,Bludenz," , Wichnerstraße "
+958,Büroräumlichkeiten / Top 9,Preis auf Anfrage,N/A,110 m,Bludenz,Bludenz," , Wichnersstraße "

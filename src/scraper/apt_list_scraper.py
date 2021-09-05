@@ -47,4 +47,6 @@ class ImmoAptListScraper(scrapy.Spider):
             yield response.follow(next_page, self.parse)
 
         df = pd.DataFrame(data=self.link_list)
-        df.to_csv("src/data/apt_dump.csv", index_label="id")
+        df.drop_duplicates(subset="link").to_csv(
+            "src/data/apt_dump.csv", index_label="id"
+        )
