@@ -111,4 +111,4 @@ class ImmoAptInfoScraper(scrapy.Spider):
         file_export = pd.DataFrame(data=a)
         file_export.drop_duplicates(subset=["title"]).to_csv(
             "src/data/apt_data.csv", index_label="id"
-        )
+        ).reset_index()
