@@ -1674,6 +1674,23 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "pydruid"
+version = "0.6.2"
+description = "A Python connector for Druid."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+requests = "*"
+
+[package.extras]
+async = ["tornado"]
+cli = ["pygments", "prompt_toolkit (>=2.0.0)", "tabulate"]
+pandas = ["pandas"]
+sqlalchemy = ["sqlalchemy"]
+
+[[package]]
 name = "pygments"
 version = "2.10.0"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -2432,7 +2449,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "6ed774d5464e2e0e12db507ceb5e640c2b2bca88b14c8e9fce0a834eb3c56c61"
+content-hash = "42504e943c6004502be247b155777afa8173ee880e4d7575ba6c777f703b4e6f"
 
 [metadata.files]
 alembic = [
@@ -3568,6 +3585,9 @@ pycparser = [
 pydispatcher = [
     {file = "PyDispatcher-2.0.5.tar.gz", hash = "sha256:5570069e1b1769af1fe481de6dd1d3a388492acddd2cdad7a3bde145615d5caf"},
     {file = "PyDispatcher-2.0.5.zip", hash = "sha256:5be4a8be12805ef7d712dd9a93284fb8bc53f309867e573f653a72e5fd10e433"},
+]
+pydruid = [
+    {file = "pydruid-0.6.2.tar.gz", hash = "sha256:e41bcb89d4ea704997d440910a604ba2e7df3eb1dcfc406e838961aba20af15a"},
 ]
 pygments = [
     {file = "Pygments-2.10.0-py3-none-any.whl", hash = "sha256:b8e67fe6af78f492b3c4b3e2970c0624cbf08beb1e493b2c99b9fa1b67a20380"},
