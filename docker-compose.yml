@@ -51,6 +51,7 @@ services:
     depends_on:
       - zookeeper
       - postgres
+      - s3
     ports:
       - "8081:8081"
     command:
