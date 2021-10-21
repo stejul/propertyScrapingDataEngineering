@@ -3,7 +3,7 @@
 
 A example project where I test out different data engineering tools, like Apache Druid, PySPark and Dagster.
 
-With scrapy I#m extracting some key information on various apartments, load them up into a S3 storage and run into Apache Druid.
+With scrapy I'm extracting some key information on various apartments, load them up into a S3 storage and run into Apache Druid.
 
 
 ## Tech Stack
